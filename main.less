@@ -1,3 +1,38 @@
 ﻿body {
-    color: red;
+    padding: 0px;
+    margin: 0px; 
+    #header {
+        background-color: rgba(255,255,255,.5);
+        height: 60px;
+        position: relative;
+
+        h1 {
+            font-family: "Archivo Black", serif;
+            padding-left: 20px;
+            font-size: 20px;
+            float: left;
+        }
+
+        #link-block {
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-top: -5px;
+            margin-left: 50px;
+
+            a {
+                font-family: "Inter", serif;
+                margin-right: 30px;
+            }
+        }
+    }
+    //end of header
+
+    #hero-header {
+        //background: url(http://www.intrawallpaper.com/static/images/hd_wallpapers_gg3.jpg) no-repeat center center;
+        height: 100vh;
+        background-color: red;
+        margin-top: -60px;
+    }
 }
