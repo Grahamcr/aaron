@@ -13,8 +13,14 @@
             padding-left: 20px;
             font-size: 20px;
             float: left;
-            position:relative;
-            top:3px;
+            position: relative;
+            top: 3px;
+        }
+
+        #header-logo {
+            height: 90px;
+            margin-top: -18px;
+            margin-left: 20px;
         }
 
         #link-block {
@@ -23,11 +29,13 @@
             top: 50%;
             transform: translateY(-50%);
             margin-top: -2px;
-            margin-left: 50px;
+            margin-left: 20px;
 
             a {
                 font-family: "Inter", serif;
                 margin-right: 30px;
+                color: #03114A;
+                font-weight: 700;
             }
         }
     }
@@ -47,16 +55,31 @@
         -ms-filter: blur(3px);
         filter: blur(3px);
     }
+    //end of hero header
 
     #hero-content {
         display: flex;
         width: 100%;
         height: 100vh;
         margin-top: -100vh;
-
+        z-index: 5;
 
         #left-content {
             flex: 50%;
+
+            #left-wrapper {
+                position: relative;
+
+                #top {
+
+                    img {
+                        height: 200px;
+                        position: absolute;
+                        left: 10px;
+                        top: 50px;
+                    }
+                }
+            }
         }
 
         #right-content {
@@ -70,5 +93,9 @@
                 height: 80%;
             }
         }
+    }
+    //end of hero content
+
+    #hero-body-split {
     }
 }
